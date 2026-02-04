@@ -42,6 +42,23 @@
   }
 
   /* Optional: if you want a light background behind About section */
+  <script>
+  function loadVideo(containerId, videoId) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = `
+      <div class="relative" style="padding-top:56.25%;">
+        <iframe
+          class="absolute top-0 left-0 w-full h-full rounded"
+          src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    `;
+  }
+</script>
+
   body {
     background-color: #fffaf0; 
   }
@@ -164,7 +181,34 @@
         </p>
         <img src="2.png" alt="Navigation Tutorial Slide" class="rounded border w-full">
       </div>
+  <div class="bg-white rounded-lg shadow p-4">
+    <h3 class="text-xl font-semibold mb-2">Microlearning Course</h3>
 
+    <p class="text-sm text-gray-700 mb-4">
+      A short-form microlearning course demonstrating concise instructional design,
+      visual clarity, and performance-focused learning.
+    </p>
+
+    <div
+      id="microlearning-video"
+      class="relative cursor-pointer group"
+      onclick="loadVideo('microlearning-video', 'dQs__0AOgGA')"
+    >
+      <img
+        src="https://img.youtube.com/vi/dQs__0AOgGA/hqdefault.jpg"
+        alt="Microlearning Course Video Thumbnail"
+        class="rounded border w-full"
+      />
+
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div
       <div class="bg-white rounded-lg shadow p-4">
         <h3 class="text-xl font-semibold mb-2">VoicePrint Scenario</h3>
         <p class="text-sm text-gray-700 mb-4">
@@ -172,39 +216,7 @@
         </p>
         <img src="3.png" alt="VoicePrint Scenario Slide" class="rounded border w-full">
       </div>
-      <div class="bg-white rounded-lg shadow p-4">
-  <h3 class="text-xl font-semibold mb-2">Microlearning Course</h3>
-
-  <p class="text-sm text-gray-700 mb-4">
-    A short-form microlearning course demonstrating concise instructional design, visual clarity, and performance-focused learning.
-  </p>
-
-  <a
-    href="https://youtu.be/dQs__0AOgGA"
-    target="_blank"
-    rel="noopener"
-    class="block relative group"
-  >
-    <img
-      src="https://img.youtube.com/vi/dQs__0AOgGA/hqdefault.jpg"
-      alt="Microlearning Course Video Thumbnail"
-      class="rounded border w-full"
-    />
-
-    <!-- Play button overlay -->
-    <div class="absolute inset-0 flex items-center justify-center">
-      <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
-        </svg>
-      </div>
-    </div>
-  </a>
-</div>
-
-    </div>
-  </section>
-
+     
  
   
 
