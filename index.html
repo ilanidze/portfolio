@@ -133,86 +133,88 @@
   </section>
 
   <section class="bg-orange-50 px-6 py-10">
-    <h1 class="text-2xl font-semibold text-orange-700 mb-4 text-center">Portfolio</h1>
+  <h1 class="text-2xl font-semibold text-orange-700 mb-8 text-center">
+    Portfolio
+  </h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-white rounded-lg shadow p-4 col-span-1 sm:col-span-2">
-        <h3 class="text-xl font-semibold mb-2">IFS Foundations for Planners – Enercare</h3>
-        <p class="text-sm text-gray-700 mb-4">
-          This multi-module training program supported Enercare’s transition from ClickSoftware to IFS for field service management.
-          I developed interactive eLearning using Articulate Storyline, including terminology alignment, system simulations, and xAPI tracking.
-          The training improved onboarding efficiency and user readiness across over 2,000 technicians and dispatchers.
-        </p>
-        <div class="grid grid-cols-2 gap-2">
-          <img src="Enercare1.png" alt="Enercare Screenshot 1" class="rounded border">
-          <img src="Enercare2.png" alt="Enercare Screenshot 2" class="rounded border">
-          <img src="Enercare3.png" alt="Enercare Screenshot 3" class="rounded border">
-          <img src="Enercare4.png" alt="Enercare Screenshot 4" class="rounded border">
-        </div>
-      </div>
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <!-- Knowledge Check -->
-      <div class="bg-white rounded-lg shadow p-4">
-        <h3 class="text-xl font-semibold mb-2">Knowledge Check Module</h3>
-        <p class="text-sm text-gray-700 mb-4">
-          A custom knowledge check slide created to test user comprehension using feedback, branching, and clear instructions.
-        </p>
-        <img src="1.png" alt="Knowledge Check Slide" class="rounded border w-full">
-      </div>
+    <!-- Column 1 -->
+    <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+      <h3 class="text-xl font-semibold mb-3">
+        Enercare IFS Training
+      </h3>
 
-      <!-- Navigation Instructions -->
-      <div class="bg-white rounded-lg shadow p-4">
-        <h3 class="text-xl font-semibold mb-2">Navigation Instructions</h3>
-        <p class="text-sm text-gray-700 mb-4">
-          Visual navigation instructions for self-paced system simulations.
-        </p>
-        <img src="2.png" alt="Navigation Tutorial Slide" class="rounded border w-full">
-      </div>
+      <p class="text-sm text-gray-700 mb-4">
+        Enterprise system training supporting Enercare’s transition to IFS for
+        field service management, including simulations, terminology alignment,
+        and performance-based learning.
+      </p>
 
-      <!-- Microlearning Course (click thumbnail to play in-page) -->
-      <div class="bg-white rounded-lg shadow p-4">
-        <h3 class="text-xl font-semibold mb-2">Microlearning Course</h3>
-        <p class="text-sm text-gray-700 mb-4">
-          A short-form microlearning course demonstrating concise instructional design,
-          visual clarity, and performance-focused learning.
-        </p>
+      <!-- Media slot -->
+      <img
+        src="Enercare1.png"
+        alt="Enercare IFS Training"
+        class="rounded border w-full mt-auto"
+      />
+    </div>
 
-        <div
-          id="microlearning-video"
-          class="relative cursor-pointer group"
-          onclick="loadVideo('microlearning-video', 'dQs__0AOgGA')"
-          role="button"
-          tabindex="0"
-          onkeypress="if(event.key==='Enter' || event.key===' ') loadVideo('microlearning-video', 'dQs__0AOgGA')"
-          aria-label="Play Microlearning Course video"
-        >
-          <img
-            src="https://img.youtube.com/vi/dQs__0AOgGA/hqdefault.jpg"
-            alt="Microlearning Course Video Thumbnail"
-            class="rounded border w-full"
-          />
+    <!-- Column 2 -->
+    <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+      <h3 class="text-xl font-semibold mb-3">
+        TD Bank System Simulations
+      </h3>
 
-          <!-- Play overlay -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
-              </svg>
-            </div>
+      <p class="text-sm text-gray-700 mb-4">
+        Interactive system simulations and scenario-based learning designed
+        to support North American customer operations enablement.
+      </p>
+
+      <!-- Media slot (video-ready) -->
+      <div
+        id="td-video"
+        class="relative cursor-pointer group mt-auto"
+        onclick="loadVideo('td-video', 'dQs__0AOgGA')"
+        role="button"
+        tabindex="0"
+      >
+        <img
+          src="https://img.youtube.com/vi/dQs__0AOgGA/hqdefault.jpg"
+          alt="TD Bank System Simulation Video"
+          class="rounded border w-full"
+        />
+
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
+            </svg>
           </div>
         </div>
       </div>
-
-      <!-- VoicePrint Scenario -->
-      <div class="bg-white rounded-lg shadow p-4">
-        <h3 class="text-xl font-semibold mb-2">VoicePrint Scenario</h3>
-        <p class="text-sm text-gray-700 mb-4">
-          Scenario-based question used in a compliance training simulation for contact centre employees.
-        </p>
-        <img src="3.png" alt="VoicePrint Scenario Slide" class="rounded border w-full">
-      </div>
     </div>
-  </section>
+
+    <!-- Column 3 -->
+    <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+      <h3 class="text-xl font-semibold mb-3">
+        Government of New Brunswick Blended Learning
+      </h3>
+
+      <p class="text-sm text-gray-700 mb-4">
+        Blended learning solutions supporting Salesforce, Agentforce,
+        and AI literacy initiatives across government programs.
+      </p>
+
+      <!-- Media slot -->
+      <img
+        src="3.png"
+        alt="Government of New Brunswick Learning"
+        class="rounded border w-full mt-auto"
+      />
+    </div>
+
+  </div>
+</section>
 
   <section class="bg-orange-100 px-6 py-10 text-center">
     <h2 class="text-2xl font-semibold text-orange-700 mb-4">Connect With Me</h2>
