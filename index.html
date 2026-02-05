@@ -1,161 +1,147 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ilan Livshits | Training Consultant | L&D Leader </title>
+  <title>Ilan Livshits | Training Consultant | L&D Leader</title>
+
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<style>
-  .about {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
 
-  .about-inner {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .about-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  .about-text h2 {
-    margin-top: 0;
-  }
-
-  @media (max-width: 700px) {
-    .about-inner {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-    .about-photo {
+  <style>
+    .about {
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: 0 auto;
     }
-  }
 
-  /* Optional: if you want a light background behind About section */
-  <script>
-  function loadVideo(containerId, videoId) {
-    const container = document.getElementById(containerId);
-    container.innerHTML = `
-      <div class="relative" style="padding-top:56.25%;">
-        <iframe
-          class="absolute top-0 left-0 w-full h-full rounded"
-          src="https://www.youtube.com/embed/${videoId}?autoplay=1"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+    .about-inner {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .about-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .about-text h2 {
+      margin-top: 0;
+    }
+
+    @media (max-width: 700px) {
+      .about-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .about-photo {
+        margin: 0 auto;
+      }
+    }
+
+    /* Light background behind entire page */
+    body {
+      background-color: #fffaf0;
+    }
+
+    .about-text h2 {
+      font-weight: bold;   /* makes About Me header bold */
+      font-size: 1.6em;    /* slightly larger */
+      margin-top: 0;
+      margin-bottom: 15px; /* space under the header */
+    }
+
+    .about-text p {
+      margin-bottom: 15px; /* spacing between paragraphs */
+      line-height: 1.6;    /* improves readability */
+    }
+
+    .about-text a.btn {
+      display: inline-block;
+      margin-top: 20px;    /* space above the LinkedIn link */
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      background: #0066cc; /* LinkedIn blue */
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .about-text a.btn:hover {
+      background: #004a99; /* darker on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-orange-100 py-8">
+    <div class="max-w-4xl mx-auto px-6">
+      <!-- Name + LinkedIn button row -->
+      <div class="flex items-center justify-center gap-4">
+        <h1 class="text-4xl font-bold text-orange-800">
+          Ilan Livshits
+        </h1>
+
+        <a
+          href="https://www.linkedin.com/in/ilanlivshits"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition"
+        >
+          Connect on LinkedIn
+        </a>
       </div>
-    `;
-  }
-</script>
 
-  body {
-    background-color: #fffaf0; 
-  }
-
-  .about-text h2 {
-  font-weight: bold;   /* makes About Me header bold */
-  font-size: 1.6em;    /* slightly larger */
-  margin-top: 0;
-  margin-bottom: 15px; /* space under the header */
-}
-
-.about-text p {
-  margin-bottom: 15px; /* spacing between paragraphs */
-  line-height: 1.6;    /* improves readability */
-}
-
-.about-text a.btn {
-  display: inline-block;
-  margin-top: 20px;    /* space above the LinkedIn link */
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  background: #0066cc; /* LinkedIn blue */
-  color: #fff;
-  font-weight: 500;
-}
-.about-text a.btn:hover {
-  background: #004a99; /* darker on hover */
-}
-</style>
-
-<header class="bg-orange-100 py-8">
-  <div class="max-w-4xl mx-auto px-6">
-
-    <!-- Name + LinkedIn button row -->
-    <div class="flex items-center justify-center gap-4">
-      <h1 class="text-4xl font-bold text-orange-800">
-        Ilan Livshits
-      </h1>
-
-      <a
-        href="https://www.linkedin.com/in/ilanlivshits"
-        target="_blank"
-        rel="noopener"
-        class="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition"
-      >
-        Connect on LinkedIn
-      </a>
+      <!-- Subtitle -->
+      <p class="text-xl mt-3 text-center">
+        Training Consultant | Designer/Developer | L&D Leader
+      </p>
     </div>
+  </header>
 
-    <!-- Subtitle -->
-    <p class="text-xl mt-3 text-center">
-      Training Consultant | Designer/Developer | L&D Leader
-    </p>
+  <section id="about" class="about">
+    <div class="about-inner">
+      <!-- Profile photo -->
+      <img class="about-photo" src="me.jpg" alt="Photo of Ilan Livshits">
 
-  </div>
-</header>
-
-
-<section id="about" class="about">
-  <div class="about-inner">
-    <!-- Profile photo -->
-    <img class="about-photo" src="me.jpg" alt="Photo of Ilan Livshits">
-
-    <!-- Text -->
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-       Hi, I’m Ilan. For 15 years, I've designed organizational learning that turns complex systems into confident employee performance with real business impact. 
-      I partner with executives to build enterprise-level training programs for immediate on-the-job application using simulations, instructor-led, eLearning and post training support.
-      Recent clients include the Government of New Brunswick (Salesforce, Agentforce, AI 101), TD Bank (North American Customer Operations Enablement), and Enercare (IFS Cloud Upskilling). 
-      </p>    
-
+      <!-- Text -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi, I’m Ilan. For 15 years, I've designed organizational learning that turns complex systems into confident employee performance with real business impact.
+          I partner with executives to build enterprise-level training programs for immediate on-the-job application using simulations, instructor-led, eLearning and post training support.
+          Recent clients include the Government of New Brunswick (Salesforce, Agentforce, AI 101), TD Bank (North American Customer Operations Enablement), and Enercare (IFS Cloud Upskilling).
+        </p>
+      </div>
     </div>
-  </div>
-</section>
- <section class="px-6 py-10 max-w-4xl mx-auto">
+  </section>
+
+  <section class="px-6 py-10 max-w-4xl mx-auto">
     <h2 class="text-2xl font-semibold text-orange-700 mb-4">Services & Tools</h2>
     <ul class="list-disc list-inside">
       <li>Advanced System Simulations (Articulate 360/Storyline/RISE)</li>
-      <li>Custom Learning Videos (Camtasia, Synthesia, GenAI) </li>
+      <li>Custom Learning Videos (Camtasia, Synthesia, GenAI)</li>
       <li>Enterprise Learning Optimization Framework (ILT, VILT, eLearning Suite)</li>
       <li>Training Needs & Curriculum Architecture (Microsoft Ecosystem)</li>
       <li>xAPI / Learning Analytics (Javascript)</li>
-      <li>Post-Training Performance Solutions (Job Aids, Troubleshooting Guides & AI Assistants)
+      <li>Post-Training Performance Solutions (Job Aids, Troubleshooting Guides & AI Assistants)</li>
       <li>FinTech & SaaS User Manual Documentation</li>
     </ul>
   </section>
 
-
   <section class="bg-orange-50 px-6 py-10">
     <h1 class="text-2xl font-semibold text-orange-700 mb-4 text-center">Portfolio</h1>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white rounded-lg shadow p-4 col-span-1 sm:col-span-2">
         <h3 class="text-xl font-semibold mb-2">IFS Foundations for Planners – Enercare</h3>
         <p class="text-sm text-gray-700 mb-4">
-          This multi-module training program supported Enercare’s transition from ClickSoftware to IFS for field service management. I developed interactive eLearning using Articulate Storyline, including terminology alignment, system simulations, and xAPI tracking. The training improved onboarding efficiency and user readiness across over 2,000 technicians and dispatchers.
+          This multi-module training program supported Enercare’s transition from ClickSoftware to IFS for field service management.
+          I developed interactive eLearning using Articulate Storyline, including terminology alignment, system simulations, and xAPI tracking.
+          The training improved onboarding efficiency and user readiness across over 2,000 technicians and dispatchers.
         </p>
         <div class="grid grid-cols-2 gap-2">
           <img src="Enercare1.png" alt="Enercare Screenshot 1" class="rounded border">
@@ -165,7 +151,7 @@
         </div>
       </div>
 
-      <!-- New Project -->
+      <!-- Knowledge Check -->
       <div class="bg-white rounded-lg shadow p-4">
         <h3 class="text-xl font-semibold mb-2">Knowledge Check Module</h3>
         <p class="text-sm text-gray-700 mb-4">
@@ -174,41 +160,50 @@
         <img src="1.png" alt="Knowledge Check Slide" class="rounded border w-full">
       </div>
 
+      <!-- Navigation Instructions -->
       <div class="bg-white rounded-lg shadow p-4">
-        <h3 class="text-xl font-semibold mb-2">Navigation Tutorial</h3>
+        <h3 class="text-xl font-semibold mb-2">Navigation Instructions</h3>
         <p class="text-sm text-gray-700 mb-4">
-          Visual navigation instructions designed to support learner onboarding for self-paced modules.
+          Visual navigation instructions for self-paced system simulations.
         </p>
         <img src="2.png" alt="Navigation Tutorial Slide" class="rounded border w-full">
       </div>
-  <div class="bg-white rounded-lg shadow p-4">
-    <h3 class="text-xl font-semibold mb-2">Microlearning Course</h3>
 
-    <p class="text-sm text-gray-700 mb-4">
-      A short-form microlearning course demonstrating concise instructional design,
-      visual clarity, and performance-focused learning.
-    </p>
+      <!-- Microlearning Course (click thumbnail to play in-page) -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-xl font-semibold mb-2">Microlearning Course</h3>
+        <p class="text-sm text-gray-700 mb-4">
+          A short-form microlearning course demonstrating concise instructional design,
+          visual clarity, and performance-focused learning.
+        </p>
 
-    <div
-      id="microlearning-video"
-      class="relative cursor-pointer group"
-      onclick="loadVideo('microlearning-video', 'dQs__0AOgGA')"
-    >
-      <img
-        src="https://img.youtube.com/vi/dQs__0AOgGA/hqdefault.jpg"
-        alt="Microlearning Course Video Thumbnail"
-        class="rounded border w-full"
-      />
+        <div
+          id="microlearning-video"
+          class="relative cursor-pointer group"
+          onclick="loadVideo('microlearning-video', 'dQs__0AOgGA')"
+          role="button"
+          tabindex="0"
+          onkeypress="if(event.key==='Enter' || event.key===' ') loadVideo('microlearning-video', 'dQs__0AOgGA')"
+          aria-label="Play Microlearning Course video"
+        >
+          <img
+            src="https://img.youtube.com/vi/dQs__0AOgGA/hqdefault.jpg"
+            alt="Microlearning Course Video Thumbnail"
+            class="rounded border w-full"
+          />
 
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
-          </svg>
+          <!-- Play overlay -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div
+
+      <!-- VoicePrint Scenario -->
       <div class="bg-white rounded-lg shadow p-4">
         <h3 class="text-xl font-semibold mb-2">VoicePrint Scenario</h3>
         <p class="text-sm text-gray-700 mb-4">
@@ -216,9 +211,8 @@
         </p>
         <img src="3.png" alt="VoicePrint Scenario Slide" class="rounded border w-full">
       </div>
-     
- 
-  
+    </div>
+  </section>
 
   <section class="bg-orange-100 px-6 py-10 text-center">
     <h2 class="text-2xl font-semibold text-orange-700 mb-4">Connect With Me</h2>
@@ -228,5 +222,26 @@
   <footer class="text-center text-sm text-gray-500 py-6">
     &copy; 2026 Ilan Livshits. All rights reserved.
   </footer>
+
+  <!-- ✅ Script belongs OUTSIDE of <style> and near the end of <body> -->
+  <script>
+    function loadVideo(containerId, videoId) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+
+      container.innerHTML = `
+        <div class="relative" style="padding-top:56.25%;">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full rounded"
+            src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      `;
+    }
+  </script>
 </body>
 </html>
