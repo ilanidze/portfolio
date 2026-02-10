@@ -73,6 +73,27 @@
     .about-text a.btn:hover {
       background: #004a99; /* darker on hover */
     }
+    <style>
+  /* existing styles above */
+
+  /* Lightbox overlay */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    cursor: zoom-out;
+  }
+
   </style>
 </head>
 
