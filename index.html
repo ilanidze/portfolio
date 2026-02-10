@@ -246,58 +246,55 @@
         </div>
       </div>
     </div>
+<!-- Column 2 -->
+          <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+        <h3 class="text-xl font-semibold mb-3">
+          TD Bank Customer Operations Training
+        </h3>
 
-    <!-- Column 2 -->
-    <div class="bg-white rounded-lg shadow p-4 flex flex-col">
-      <h3 class="text-xl font-semibold mb-3">
-        TD Bank Customer Operations Training
-      </h3>
+        <p class="text-sm text-gray-700 mb-4">
+          Interactive system simulations and ILT scenario-based learning designed
+          to support new procedures for North American Customer Operations.
+        </p>
 
-      <p class="text-sm text-gray-700 mb-4">
-        Interactive system simulations and ILT scenario-based learning designed
-        to support new procedures for North American Customer Operations.
-      </p>
-
-      <!-- IMPORTANT: make sure the file path matches where TD1.png actually lives -->
-           <div class="zoom-wrapper cursor-zoom-in" onclick="openLightbox('TD1.png')">
-        <img
-          src="TD1.png"
-          alt="TD Bank System Simulations - ILT deck samples"
-          class="w-full rounded-lg shadow-md object-cover hover:opacity-95 transition"
-        />
-        <div class="zoom-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </div>
-      </div>
-
-      <!-- Second video for Column 2 (NOW INSIDE Column 2) -->
-      <div
-        id="td-video"
-        class="relative cursor-pointer group mt-4"
-        onclick="loadVideo('td-video', 'vTcGF7TkqFw')"
-        role="button"
-        tabindex="0"
-      >
-        <img
-          src="https://img.youtube.com/vi/vTcGF7TkqFw/hqdefault.jpg"
-          alt="TD Bank Interactive Simulation Video"
-          class="rounded border w-full"
-        />
-
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
+        <div class="zoom-wrapper cursor-zoom-in" onclick="openLightbox('TD1.png')">
+          <img
+            src="TD1.png"
+            alt="TD Bank System Simulations - ILT deck samples"
+            class="w-full rounded-lg shadow-md object-cover hover:opacity-95 transition"
+          />
+          <div class="zoom-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </div>
         </div>
+
+        <!-- Second video for Column 2 (properly nested) -->
+        <div
+          id="td-video"
+          class="relative cursor-pointer group mt-4"
+          onclick="loadVideo('td-video', 'vTcGF7TkqFw')"
+          role="button"
+          tabindex="0"
+        >
+          <img
+            src="https://img.youtube.com/vi/vTcGF7TkqFw/hqdefault.jpg"
+            alt="TD Bank Interactive Simulation Video"
+            class="rounded border w-full"
+          />
+
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </div>
-
+    
     <!-- Column 3 -->
     <div class="bg-white rounded-lg shadow p-4 flex flex-col">
       <h3 class="text-xl font-semibold mb-3">
