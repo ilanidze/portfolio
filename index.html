@@ -165,8 +165,8 @@
       <div class="about-text">
         <h2>About Me</h2>
         <p>
-          Hi, I’m Ilan. For 15 years, I’ve built organizational learning programs to drive confident employee performance and enable complex systems with significant business value.
-          I partner with executives to design enterprise-level programs for immediate on-the-job application using simulations, instructor-led sessions, eLearning and post training support.
+          Hi, I’m Ilan. For 15 years, I’ve worked with organizations to build learning programs that drive confident employee performance and enable complex systems with significant business value.
+          I partner with clients to design enterprise-level programs for immediate on-the-job application using simulations, instructor-led sessions, eLearning and post training support.
           Recent clients include the Government of New Brunswick, TD Bank, and Enercare.
         </p>
       </div>
@@ -303,6 +303,7 @@
     </div>
 
     <!-- Column 3 -->
+    
     <div class="bg-white rounded-lg shadow p-4 flex flex-col">
       <h3 class="text-xl font-semibold mb-3">
         Government of New Brunswick Blended Learning
@@ -314,11 +315,28 @@
       </p>
 
       <!-- Media slot -->
-      <img
-        src="3.png"
-        alt="Government of New Brunswick Learning"
-        class="rounded border w-full mt-auto"
-      />
+      <div
+  id="nb-video"
+  class="relative cursor-pointer group mt-auto"
+  onclick="loadVideo('nb-video', 'dQs__0AOgGA')"
+  role="button"
+  tabindex="0"
+>
+  <img
+    src="https://img.youtube.com/vi/dQs__0AOgGA/hqdefault.jpg"
+    alt="Government of New Brunswick Learning Video"
+    class="rounded border w-full"
+  />
+
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div class="bg-black bg-opacity-60 rounded-full p-4 group-hover:bg-opacity-80 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M6.79 5.093L10.804 8 6.79 10.907V5.093z"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
     </div>
 
   </div>
